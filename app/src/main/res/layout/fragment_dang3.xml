@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_thong_tin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/teal_200"
+            android:textColor="@color/teal_200"
+            app:itemIconTint="@color/color_bottom_nv2"
+            app:itemTextColor="@color/color_bottom_nv2"
+            android:text="@string/action_thong_tin"
+            android:drawableTop="@drawable/ic_baseline_radio_button_checked_24"/>
+        <TextView
+            android:id="@+id/image3"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/teal_200"
+            android:background="@drawable/ic_baseline_horizontal_rule_24"/>
+        <TextView
+            android:layout_marginLeft="-10dp"
+            android:id="@+id/text_dia_chi"
+            android:layout_width="wrap_content"
+            android:textColor="@color/teal_200"
+            android:drawableTint="@color/teal_200"
+            android:layout_height="wrap_content"
+            app:itemIconTint="@color/color_bottom_nv2"
+            app:itemTextColor="@color/color_bottom_nv2"
+            android:text="@string/action_dia_chi"
+            android:drawableTop="@drawable/ic_baseline_radio_button_checked_24"/>
+        <TextView
+            android:id="@+id/image1"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/teal_200"
+            android:background="@drawable/ic_baseline_horizontal_rule_24"/>
+        <TextView
+            android:id="@+id/text_hinh_anh"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemIconTint="@color/color_bottom_nv2"
+            android:textColor="@color/teal_200"
+            app:itemTextColor="@color/color_bottom_nv2"
+            android:text="@string/action_anh"
+            android:drawableTop="@drawable/ic_baseline_radio_button_checked_24"/>
+        <TextView
+            android:id="@+id/image2"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="75dp"
+            app:itemIconTint="@color/color_bottom_nv"
+            android:layout_height="30dp"
+            android:backgroundTint="#59000000"
+            android:background="@drawable/ic_baseline_horizontal_rule_24"/>
+        <TextView
+            android:id="@+id/text_xac_nhan"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemTextColor="@color/color_bottom_nv2"
+            android:text="@string/action_xac_nhan"
+            app:itemIconTint="@color/color_bottom_nv2"
+            android:drawableTop="@drawable/ic_baseline_check_circle_outline_24"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/line3"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bottom_chon_anh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_camera_alt_24"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Chọn ảnh"
+            android:background="@drawable/lock2"/>
+        <TextView
+            android:id="@+id/total_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_photo"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

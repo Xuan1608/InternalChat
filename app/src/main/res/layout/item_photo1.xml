@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="180dp"
+        android:background="@color/white"
+        android:layout_height="135dp">
+<!--        <ImageView-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:id="@+id/delete_image"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_marginRight="7dp"-->
+<!--            android:backgroundTint="@color/teal_200"-->
+<!--            android:src="@drawable/ic_baseline_remove_circle_outline_24"/>-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cacview"
+        android:layout_width="177dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="12dp">
+
+        <ImageView
+
+            android:id="@+id/img_photo1"
+            android:layout_width="185dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+</LinearLayout>

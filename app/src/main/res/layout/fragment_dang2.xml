@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_thong_tin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_200"
+            android:drawableTint="@color/teal_200"
+            app:itemIconTint="@color/color_bottom_nv2"
+            app:itemTextColor="@color/color_bottom_nv2"
+            android:text="@string/action_thong_tin"
+            android:drawableTop="@drawable/ic_baseline_radio_button_checked_24"/>
+        <TextView
+            android:id="@+id/image3"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="75dp"
+            android:drawableTint="@color/teal_200"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/teal_200"
+            android:background="@drawable/ic_baseline_horizontal_rule_24"/>
+        <TextView
+            android:layout_marginLeft="-10dp"
+            android:id="@+id/text_dia_chi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_200"
+            app:itemIconTint="@color/color_bottom_nv2"
+            app:itemTextColor="@color/color_bottom_nv2"
+            android:text="@string/action_dia_chi"
+            android:drawableTop="@drawable/ic_baseline_radio_button_checked_24"/>
+        <TextView
+            android:id="@+id/image1"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:backgroundTint="#59000000"
+            android:background="@drawable/ic_baseline_horizontal_rule_24"/>
+        <TextView
+            android:id="@+id/text_hinh_anh"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemIconTint="@color/color_bottom_nv2"
+            app:itemTextColor="@color/color_bottom_nv2"
+            android:text="@string/action_anh"
+            android:drawableTop="@drawable/ic_baseline_radio_button_checked_24"/>
+        <TextView
+            android:id="@+id/image2"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="75dp"
+            app:itemIconTint="@color/color_bottom_nv"
+            android:layout_height="30dp"
+            android:backgroundTint="#59000000"
+            android:background="@drawable/ic_baseline_horizontal_rule_24"/>
+        <TextView
+            android:id="@+id/text_xac_nhan"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemTextColor="@color/color_bottom_nv2"
+            android:text="@string/action_xac_nhan"
+            app:itemIconTint="@color/color_bottom_nv2"
+            android:drawableTop="@drawable/ic_baseline_check_circle_outline_24"/>
+    </LinearLayout>
+        <ScrollView
+
+            android:layout_below="@id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tỉnh/ Thành Phố"
+        android:textSize="20dp"
+        android:textColor="@color/teal_700"/>
+    <EditText
+        android:id="@+id/etAddress1"
+        android:layout_below="@+id/text"
+        android:layout_width="250dp"
+        android:inputType="textPostalAddress"
+        android:hint="Tỉnh/ Thành Phố"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text2"
+        android:layout_below="@+id/edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/teal_700"
+        android:text="Quận/ Huyện " />
+    <EditText
+        android:id="@+id/etAddress2"
+        android:layout_below="@+id/text2"
+        android:layout_width="250dp"
+        android:hint="Quận/ Huyện"
+        android:inputType="textPostalAddress"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text4"
+        android:layout_below="@+id/edit_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/teal_700"
+        android:text="Phường/ Xã " />
+    <EditText
+        android:id="@+id/etAddress3"
+        android:layout_below="@+id/text4"
+        android:layout_width="250dp"
+        android:hint="Quận/ Huyện"
+        android:inputType="textPostalAddress"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text5"
+        android:layout_below="@+id/edit_dientich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/teal_700"
+        android:text="Số nhà, tên đường " />
+    <EditText
+        android:id="@+id/etAddress4"
+        android:layout_below="@+id/text5"
+        android:layout_width="250dp"
+        android:hint="Số nhà, tên đường"
+        android:inputType="textPostalAddress"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_baseline_location_on_24"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_dientich"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="-25dp"
+                    android:text="Địa chỉ"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etFullAddress"
+                    android:layout_below="@+id/text5"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:hint="Địa chỉ full"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

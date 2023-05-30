@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "204511072104",
+    "project_id": "internal-chat-5721c",
+    "storage_bucket": "internal-chat-5721c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204511072104:android:fc246c629977c3032d90dd",
+        "android_client_info": {
+          "package_name": "com.example.internalchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204511072104-pfg5qea1kug54c0kt964oetttevck4dv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpook02T3Qjn372wVftNlFtE4FEiFHxJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204511072104-pfg5qea1kug54c0kt964oetttevck4dv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

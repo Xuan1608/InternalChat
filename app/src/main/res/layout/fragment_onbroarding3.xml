@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnbroardingFragment1"
+    android:orientation="vertical"
+    android:background="#E9E4E6CA"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_marginTop="-200dp"
+        android:layout_width="match_parent"
+        android:layout_height="513dp"
+        android:src="@drawable/home_2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wellcom To Room Rental App"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_get_start"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lock2"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:text="Get Start"/>
+
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Room Rental</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="action_home">Trang chủ</string>
+    <string name="action_chat">Chat</string>
+    <string name="action_dang">Đăng bài</string>
+    <string name="action_tb">Thông báo</string>
+    <string name="action_account">Tài khoản </string>
+    <string name="action_thong_tin">Thông tin </string>
+    <string name="action_anh">Hình ảnh </string>
+    <string name="action_xac_nhan">xác nhận </string>
+    <string name="action_tiep_theo">Tiếp theo </string>
+    <string name="action_search">Search</string>
+    <string name="action_dia_chi">Địa chỉ </string>
+
+    <string name="select_image">Chọn ảnh</string>
+    <string name="done">Hoàn tất</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nh_p_ti_u">Nhập tiêu đề</string>
+</resources>

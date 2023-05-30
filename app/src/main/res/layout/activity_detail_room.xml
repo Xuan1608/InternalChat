@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_Room_Activity">
+
+    <LinearLayout
+        android:id="@+id/linear_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700">
+
+        <TextView
+            android:id="@+id/back_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/teal_700"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_detail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <TextView
+            android:id="@+id/tym_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/teal_700"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:paddingRight="20dp"
+            android:drawableTint="@color/teal_200"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ic_outline_favorite_border_24" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/linear_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/image_account1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="13dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        app:iss_period="4000"
+                        app:iss_auto_cycle="true"
+                        app:iss_delay="4000"
+                        android:id="@+id/imageSlider"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/title_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_detail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Title"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/title_detail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_baseline_location_on_24"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/location_item_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_detail"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-30dp"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/map_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_item_detail"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="0dp"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:text="Xem Bản đồ"
+                android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                android:textColor="#C30040FF"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/location_item_detail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dientich"
+                android:backgroundTint="@color/teal_700"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/acreage_item_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_item_detail"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="-30dp"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="100"
+                android:textColor="@color/teal_700"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/acreage_item_detail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_baseline_phone_24"
+                android:backgroundTint="@color/teal_200"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/phone_item_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/acreage_item_detail"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="-32dp"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="Phone number"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/phone_item_detail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_baseline_attach_money_24"
+                android:backgroundTint="@color/teal_700"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/price_item_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_item_detail"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-36dp"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="Price"
+                android:textColor="@color/teal_200"
+                android:textSize="25dp" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/phone_item_detail"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_baseline_access_time_24"
+                android:backgroundTint="@color/teal_700"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/time_item_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_item_detail"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="-30dp"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="Price"
+                android:textColor="#A6000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text_tien_ich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grid_detail"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="5dp"
+                android:text="Tiện ích phòng"
+                android:textColor="@color/teal_700"
+                android:textSize="25dp" />
+
+
+            <LinearLayout
+                android:id="@+id/tien_ich"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/text6"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Wifi"
+                    app:itemIconTint="@color/color_bottom_nv2"
+                    app:itemTextColor="@color/color_bottom_nv2"
+                    android:drawableTop="@drawable/ic_baseline_wifi_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:textSize="20dp"
+                    android:text="WC riêng"
+                    app:itemIconTint="@color/color_bottom_nv2"
+                    app:itemTextColor="@color/color_bottom_nv2"
+                    android:drawableTop="@drawable/ic_baseline_wc_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:textSize="20dp"
+                    android:text="Giữ xe "
+                    app:itemIconTint="@color/color_bottom_nv2"
+                    app:itemTextColor="@color/color_bottom_nv2"
+                    android:drawableTop="@drawable/ic_baseline_directions_bike_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:textSize="20dp"
+                    android:text="Tự do"
+                    app:itemIconTint="@color/color_bottom_nv2"
+                    app:itemTextColor="@color/color_bottom_nv2"
+                    android:drawableTop="@drawable/ic_baseline_access_time_filled_24"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/tien_ich"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Bếp"
+                    app:itemIconTint="@color/color_bottom_nv2"
+                    app:itemTextColor="@color/color_bottom_nv2"
+                    android:drawableTop="@drawable/ic_baseline_soup_kitchen_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:textSize="20dp"
+                    android:text="Máy lạnh"
+                    app:itemIconTint="@color/color_bottom_nv2"
+                    app:itemTextColor="@color/color_bottom_nv2"
+                    android:drawableTop="@drawable/iair"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:textSize="20dp"
+                    app:itemIconTint="@color/color_bottom_nv2"
+                    app:itemTextColor="@color/color_bottom_nv2"
+                    android:text="Tủ lạnh "
+                    android:drawableTop="@drawable/ic_baseline_kitchen_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:textSize="20dp"
+                    android:text="Máy giặt"
+                    app:itemIconTint="@color/color_bottom_nv2"
+                    app:itemTextColor="@color/color_bottom_nv2"
+                    android:drawableTop="@drawable/machine"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grid_detail"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="Mô tả chi tiết "
+                android:textColor="@color/teal_700"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/description_item_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_below="@+id/text_description"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                android:text="description"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/text_gg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grid_detail"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="Địa điểm "
+                android:textColor="@color/teal_700"
+                android:textSize="25dp" />
+
+            <ImageButton
+                android:id="@+id/gg_map"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginLeft="-5dp"
+                android:src="@drawable/google_1"/>
+
+            <TextView
+                android:id="@+id/text_goi_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grid_detail"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="Phòng tương tự"
+                android:textColor="@color/teal_700"
+                android:textSize="25dp" />
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:numColumns="2"
+                android:padding="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

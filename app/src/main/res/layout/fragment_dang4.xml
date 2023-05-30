@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_thong_tin"
+            android:layout_width="wrap_content"
+            android:drawableTint="@color/teal_200"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_200"
+            app:itemIconTint="@color/color_bottom_nv2"
+            app:itemTextColor="@color/color_bottom_nv2"
+            android:text="@string/action_thong_tin"
+            android:drawableTop="@drawable/ic_baseline_radio_button_checked_24"/>
+        <TextView
+            android:id="@+id/image3"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/teal_200"
+            android:background="@drawable/ic_baseline_horizontal_rule_24"/>
+        <TextView
+            android:layout_marginLeft="-10dp"
+            android:id="@+id/text_dia_chi"
+            android:textColor="@color/teal_200"
+            android:drawableTint="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemIconTint="@color/color_bottom_nv2"
+            app:itemTextColor="@color/color_bottom_nv2"
+            android:text="@string/action_dia_chi"
+            android:drawableTop="@drawable/ic_baseline_radio_button_checked_24"/>
+        <TextView
+            android:id="@+id/image1"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/teal_200"
+            android:background="@drawable/ic_baseline_horizontal_rule_24"/>
+        <TextView
+            android:id="@+id/text_hinh_anh"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_200"
+            android:drawableTint="@color/teal_200"
+            app:itemIconTint="@color/color_bottom_nv2"
+            app:itemTextColor="@color/color_bottom_nv2"
+            android:text="@string/action_anh"
+            android:drawableTop="@drawable/ic_baseline_radio_button_checked_24"/>
+        <TextView
+            android:id="@+id/image2"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="75dp"
+            app:itemIconTint="@color/color_bottom_nv"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/teal_200"
+            android:background="@drawable/ic_baseline_horizontal_rule_24"/>
+        <TextView
+            android:id="@+id/text_xac_nhan"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_200"
+            app:itemTextColor="@color/color_bottom_nv2"
+            android:text="@string/action_xac_nhan"
+            app:itemIconTint="@color/color_bottom_nv2"
+            android:drawableTop="@drawable/ic_baseline_check_circle_outline_24"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiêu đề bài đăng"
+        android:textSize="20dp"
+        android:textColor="@color/teal_700"/>
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="250dp"
+        android:hint="@string/nh_p_ti_u"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill,RtlSymmetry" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text5"
+        android:layout_below="@+id/edit_dientich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/teal_700"
+        android:text="Số điện thoại liên lạc " />
+    <EditText
+        android:id="@+id/edit_sdt"
+        android:layout_below="@+id/text5"
+        android:layout_width="250dp"
+        android:inputType="phone"
+        android:hint="Nhập số điện thoại"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/text4"
+                android:layout_below="@+id/edit_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/teal_700"
+                android:text="Mô tả chi tiết " />
+
+            <EditText
+                android:id="@+id/edit_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text4"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lock3"
+                android:backgroundTint="#BED8DC"
+                android:hint="Nhập mô tả chi tiết"
+                android:paddingVertical="20dp"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:textColor="@color/teal_200"
+                android:layout_marginTop="30dp"
+                android:text="* Bằng việc bấm XÁC NHẬN đồng nghĩa với bạn đã đồng ý với Điều Khoản và chính sách của chúng tôi."/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/teal_700"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn có thể xem điều khoản và chính sách tại đây..."/>
+            <TextView
+                android:id="@+id/text_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_below="@+id/text_ưu_đãi"
+                android:text="Điều khoản"
+                android:drawableLeft="@drawable/ic_baseline_policy_24"
+                android:textSize="20dp"
+                android:backgroundTint="#E4C0A8EA"
+                android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                android:drawablePadding="25dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/image_sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="20dp"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
