@@ -50,7 +50,7 @@
             android:layout_marginRight="7dp"
             android:layout_gravity="center_vertical"
             android:layout_height="match_parent"
-            android:backgroundTint="#81D0C1E6"
+            android:backgroundTint="#ADEAC3B1"
             android:background="@drawable/lock">
             <androidx.cardview.widget.CardView
                 android:id="@+id/image_account1"
@@ -69,7 +69,6 @@
                 android:backgroundTint="@color/white"
                 android:layout_centerHorizontal="true"
                 />
-
             </androidx.cardview.widget.CardView>
 
             <RelativeLayout
@@ -110,7 +109,7 @@
                 android:textStyle="bold"
                 android:text="full name"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="23dp"
                 android:layout_centerHorizontal="true"/>
             </RelativeLayout>
 

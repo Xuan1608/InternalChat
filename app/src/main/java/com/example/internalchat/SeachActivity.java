@@ -79,10 +79,10 @@ public class SeachActivity extends AppCompatActivity {
                 if (!TextUtils.isEmpty(query)) {
                     filterAddress(query);
                 } else {
+
                     // Nếu newText rỗng, hiển thị tất cả các địa chỉ
-                    allAddresses.clear();
-                    searchAdapter.notifyDataSetChanged();
-                    loadAddresses();
+//                    allAddresses.clear();
+//                    searchAdapter.notifyDataSetChanged();
                 }
                 return true;
             }

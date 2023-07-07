@@ -32,20 +32,21 @@
         android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
     <TextView
         android:id="@+id/price_item"
         android:layout_width="wrap_content"
-        android:textColor="@color/teal_200"
-        android:text="price/thang"
-        android:paddingLeft="3dp"
         android:layout_height="wrap_content"
-        android:textSize="20dp"/>
+        android:paddingLeft="3dp"
+        android:text="price/thang"
+        android:textColor="@color/cam"
+        android:textSize="20dp" />
 
     <ImageView
         android:layout_marginTop="5dp"
         android:paddingLeft="5dp"
         android:layout_width="20dp"
-        android:backgroundTint="@color/teal_200"
+        android:backgroundTint="#8592a4"
         android:layout_height="20dp"
         android:background="@drawable/ic_baseline_access_time_24"/>
     <TextView
@@ -64,6 +65,7 @@
         android:paddingLeft="5dp"
         android:layout_width="20dp"
         android:layout_height="20dp"
+        android:backgroundTint="#8592a4"
         android:background="@drawable/ic_baseline_location_on_24"/>
     <TextView
         android:id="@+id/location_item"

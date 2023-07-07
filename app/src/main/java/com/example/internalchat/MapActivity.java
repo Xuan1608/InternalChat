@@ -42,7 +42,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         String postId = intent.getStringExtra("Id");
 
         // Khởi tạo MapFragment
-        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map_g);
+        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map_ggAPI);
         mapFragment.getMapAsync(this);
     }
 

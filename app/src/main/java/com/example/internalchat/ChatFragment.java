@@ -17,7 +17,6 @@ import androidx.fragment.app.Fragment;
         public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
             View view = inflater.inflate(R.layout.fragment_chat, container, false);
 
-
             toolbar_chat = view.findViewById(R.id.toolbar_chat);
             toolbar_chat.setTitle("Chat");
             return view;

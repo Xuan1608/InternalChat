@@ -188,8 +188,8 @@ public class Detail_Room_Activity extends AppCompatActivity {
                             }
                             String Acreage = document.getData().get("acreage").toString();
                             acreage.setText(Acreage + " " + "m2");
-//                    String phone = document.getData().get("").toString();
-//                    Phone.setText(phone);
+                    String phone = document.getData().get("phone").toString();
+                    Phone.setText(phone);
 //                    List<String> images = (List<String>) document.get("image");
 //                    for (int i = 0; i < 5; i++) {
 //                    String imageURL = images.get(i);

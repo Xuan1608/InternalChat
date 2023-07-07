@@ -34,7 +34,7 @@
         android:layout_marginRight="7dp"
         android:layout_marginLeft="5dp"
         android:gravity="center"
-        android:backgroundTint="#81D0C1E6"
+        android:backgroundTint="#ADEAC3B1"
         android:background="@drawable/lock">
         <androidx.cardview.widget.CardView
             android:id="@+id/image_account1"
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content">
         <TextView
             android:id="@+id/text_name"
-            android:padding="15dp"
+            android:padding="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
@@ -66,7 +66,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:textColor="@color/black"
-            android:textSize="25dp" />
+            android:textSize="23dp" />
         </RelativeLayout>
     </RelativeLayout>
     <TextView
@@ -78,6 +78,7 @@
         android:drawableLeft="@drawable/ic_baseline_account_circle_24"
         android:textSize="25dp"
         android:drawablePadding="25dp"
+        android:drawableTint="@color/teal_700"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:textStyle="normal"
@@ -86,7 +87,7 @@
         android:drawableRight="@drawable/ic_baseline_navigate_next_24"
         android:layout_marginTop="30dp"
         android:paddingStart="15dp"
-        android:backgroundTint="#E4C0A8EA"
+        android:backgroundTint="@color/teal_200"
         android:padding="10dp"/>
     <TextView
         android:id="@+id/text_manager"
@@ -105,7 +106,8 @@
         android:layout_marginTop="20dp"
         android:paddingStart="15dp"
         android:paddingLeft="20dp"
-        android:backgroundTint="#E4C0A8EA"
+        android:backgroundTint="@color/teal_200"
+        android:drawableTint="@color/teal_700"
         android:padding="10dp"/>
             <TextView
                 android:id="@+id/text_Favorite"
@@ -116,7 +118,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/image_sp"
-                android:backgroundTint="#E4C0A8EA"
+                android:backgroundTint="@color/teal_200"
                 android:drawableTint="@color/teal_700"
                 android:drawableLeft="@drawable/ic_baseline_favorite_24"
                 android:drawableRight="@drawable/ic_baseline_navigate_next_24"
@@ -138,7 +140,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/image_sp"
-                android:backgroundTint="#E4C0A8EA"
+                android:backgroundTint="@color/teal_200"
                 android:drawableLeft="@drawable/ic_baseline_credit_card_24"
                 android:drawableRight="@drawable/ic_baseline_navigate_next_24"
                 android:drawablePadding="25dp"
@@ -147,6 +149,7 @@
                 android:paddingLeft="20dp"
                 android:text="Liên kết tài khoản"
                 android:textColor="@color/black"
+                android:drawableTint="@color/teal_700"
                 android:textSize="25dp" />
 
             <TextView
@@ -166,7 +169,8 @@
         android:layout_marginTop="20dp"
         android:paddingStart="15dp"
         android:paddingLeft="20dp"
-        android:backgroundTint="#E4C0A8EA"
+                android:backgroundTint="@color/teal_200"
+                android:drawableTint="@color/teal_700"
         android:padding="10dp"/>
     <TextView
         android:id="@+id/text_policy"
@@ -176,7 +180,7 @@
         android:text="Điều khoản"
         android:drawableLeft="@drawable/ic_baseline_policy_24"
         android:textSize="25dp"
-        android:backgroundTint="#E4C0A8EA"
+        android:backgroundTint="@color/teal_200"
         android:drawableRight="@drawable/ic_baseline_navigate_next_24"
         android:drawablePadding="25dp"
         android:layout_marginStart="5dp"
@@ -186,6 +190,7 @@
         android:layout_marginTop="20dp"
         android:paddingStart="15dp"
         android:paddingLeft="20dp"
+        android:drawableTint="@color/teal_700"
         android:padding="10dp"/>
     <TextView
         android:id="@+id/text_setting"
@@ -195,7 +200,7 @@
         android:text="Cài đặt"
         android:drawableLeft="@drawable/ic_baseline_settings_24"
         android:textSize="25dp"
-        android:backgroundTint="#E4C0A8EA"
+        android:backgroundTint="@color/teal_200"
         android:drawableRight="@drawable/ic_baseline_navigate_next_24"
         android:drawablePadding="25dp"
         android:layout_marginStart="5dp"
@@ -205,6 +210,7 @@
         android:layout_marginTop="20dp"
         android:paddingStart="15dp"
         android:paddingLeft="20dp"
+        android:drawableTint="@color/teal_700"
         android:padding="10dp"/>
     <TextView
         android:id="@+id/text_logout"
@@ -219,6 +225,7 @@
         android:drawablePadding="25dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
+        android:drawableTint="@color/white"
         android:background="@drawable/image_sp"
         android:textColor="@color/black"
         android:layout_marginTop="20dp"

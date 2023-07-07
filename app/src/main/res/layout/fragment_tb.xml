@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
     <LinearLayout
         android:id="@+id/linear_profile"
         android:layout_width="match_parent"
@@ -15,22 +16,37 @@
             android:background="@color/teal_700"/>
 
     </LinearLayout>
-
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:maxImageSize="35dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_baseline_add_24" />
     <ScrollView
         android:id="@+id/scrollView_tb"
         android:layout_width="match_parent"
-        android:layout_below="@+id/linear_profile"
-        android:layout_height="match_parent">
-    <LinearLayout
-        android:padding="5dp"
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+        android:layout_below="@+id/linear_profile"
+        android:layout_marginTop="40dp">
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/videosRcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_video" />
+
+        </LinearLayout>
 
     </ScrollView>
 </RelativeLayout>

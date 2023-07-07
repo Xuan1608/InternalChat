@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".VideoActivity">
+    <EditText
+        android:id="@+id/title_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CAB9E8"
+        android:hint="Nhập Title"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:inputType="textPersonName|textCapSentences"/>
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/title_video"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/upload_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video"
+        android:layout_marginTop="30dp"
+        android:text="Thêm video"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addVideo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/teal_700"
+        app:maxImageSize="28dp"
+        android:src="@drawable/ic_baseline_video_library_24" />
+
+
+
+
+</RelativeLayout>

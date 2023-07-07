@@ -27,7 +27,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="483dp"
+            android:layout_height="500dp"
             android:layout_below="@+id/login_image"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="15dp"
@@ -41,18 +41,18 @@
 
             <LinearLayout
                 android:layout_width="362dp"
-                android:layout_height="459dp"
+                android:layout_height="500dp"
                 android:layout_gravity="center_horizontal"
                 android:orientation="vertical"
                 android:padding="-3dp">
 
-                <TextView
+                <ImageView
                     android:id="@+id/login_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginTop="20dp"
-                    android:text="Welcome"
-                    android:textAlignment="center"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center"
                     android:textColor="@color/purple_200"
                     android:textSize="36dp"
                     android:textStyle="bold" />
@@ -63,7 +63,7 @@
                     android:layout_height="50dp"
                     android:layout_below="@+id/login_image"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
                     android:background="@drawable/lock"
                     android:drawableLeft="@drawable/ic_baseline_email_24"

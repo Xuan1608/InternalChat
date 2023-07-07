@@ -42,6 +42,7 @@
             android:gravity="center_vertical"
             android:textSize="20dp"
             android:paddingRight="20dp"
+            android:drawableTint="@color/cam"
             android:textStyle="bold"
             android:drawableEnd="@drawable/ic_baseline_disabled_by_default_24" />
 
@@ -99,6 +100,7 @@
                 android:layout_below="@+id/title_detail_manage"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
+                android:backgroundTint="#8592a4"
                 android:background="@drawable/ic_baseline_location_on_24"
                 android:paddingLeft="10dp" />
 
@@ -122,7 +124,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/dientich"
-                android:backgroundTint="@color/teal_700"
+
+                android:backgroundTint="#8592a4"
                 android:paddingLeft="10dp" />
 
             <TextView
@@ -135,7 +138,7 @@
                 android:drawablePadding="5dp"
                 android:padding="5dp"
                 android:text="100"
-                android:textColor="@color/teal_700"
+                android:textColor="@color/black"
                 android:textSize="20dp" />
 
             <ImageView
@@ -145,7 +148,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/ic_baseline_phone_24"
-                android:backgroundTint="@color/teal_200"
+                android:backgroundTint="#8592a4"
                 android:paddingLeft="10dp" />
 
             <TextView
@@ -168,7 +171,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/ic_baseline_attach_money_24"
-                android:backgroundTint="@color/teal_700"
+                android:backgroundTint="#8592a4"
                 android:paddingLeft="10dp" />
 
             <TextView
@@ -181,16 +184,17 @@
                 android:drawablePadding="5dp"
                 android:padding="5dp"
                 android:text="Price"
-                android:textColor="@color/teal_200"
+                android:textColor="@color/cam"
                 android:textSize="25dp" />
+
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_below="@+id/phone_item_detail_manage"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="10dp"
+                android:backgroundTint="#8592a4"
                 android:background="@drawable/ic_baseline_access_time_24"
-                android:backgroundTint="@color/teal_700"
                 android:paddingLeft="10dp" />
 
             <TextView

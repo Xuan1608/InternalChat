@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wellcom To Room Rental App"
+        android:text="Truy cập vào ứng dụng"
         android:textSize="25dp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -26,8 +26,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hello"
+        android:text="Để truy cập vào ứng dụng người dùng vui lòng đăng ký tài khoản để có những trải nghiệm tốt nhât."
         android:textSize="18dp"
+        android:padding="5dp"
         android:gravity="center"
         android:textColor="@color/black"
         android:layout_marginTop="20dp"/>

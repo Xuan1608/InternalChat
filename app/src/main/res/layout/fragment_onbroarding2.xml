@@ -12,11 +12,11 @@
 
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:src="@drawable/home_4" />
+        android:src="@drawable/home_1" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hello"
+        android:text="Roomify sẽ giúp người dùng"
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -24,8 +24,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hello"
+        android:text="Nhằm giúp người dùng có trải nghiệm tốt với các chức năng của ứng dụng chúng tôi đã cho ra mắt ứng dụng Roomify"
         android:textSize="18dp"
+        android:padding="5dp"
         android:gravity="center"
         android:textColor="@color/black"
         android:layout_marginTop="20dp"/>

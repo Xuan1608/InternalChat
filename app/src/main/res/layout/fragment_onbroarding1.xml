@@ -3,20 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".OnbroardingFragment1"
     android:orientation="vertical"
     android:background="#E9E4E6CA"
     android:padding="10dp"
     android:gravity="center">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cacview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="15dp">
     <ImageView
-
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@drawable/home_1" />
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/logo" />
+    </androidx.cardview.widget.CardView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Room Rental App"
+        android:text="Roomify App"
         android:textSize="25dp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -24,7 +30,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hello"
+        android:text="Chào mừng bạn đến với Ứng Dụng Roomify"
         android:textSize="18dp"
         android:gravity="center"
         android:textColor="@color/black"
